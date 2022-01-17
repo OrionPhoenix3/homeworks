@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework12</title>
+    <title>Styles in JS</title>
+
+    <style>
+      .example {
+        width: 100px;
+        margin-left: 200px;
+        margin-top: 200px;
+        text-align: center;
+      }
+
+      .tooltip {
+        position: absolute;
+        background-color: aqua;
+      }
+
+      .tooltip::after{
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0px;
+        height: 0px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid aqua;
+       
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <button id="toggle" class="example">Toggle table</button> 
+   
+
+    <script src="./script.js"></script>
+  </body>
+</html>
